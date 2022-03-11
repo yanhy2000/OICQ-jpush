@@ -26,26 +26,26 @@
 
 #### bot推送配置
 
- - account = 114514;//bot默认扫码登陆，输入要登陆的qq号码即可;
- - base64_auth_string = "";//生成规则：appKey 加上英文冒号，加上 masterSecret 拼装起来的字符串，再做 base64 转换 (appkey:masterSecret) (https://1024tools.com/base64)
- - alias = ["yanhy"]; //设备别名，需要去app设置
+ - account = 114514;   bot默认扫码登陆，输入要登陆的qq号码即可;
+ - base64_auth_string = "";    生成规则：appKey 加上英文冒号，加上 masterSecret 拼装起来的字符串，再做 base64 转换 (appkey:masterSecret) base64转换工具(https://1024tools.com/base64) 
+ - alias = ["yanhy"];    设备别名，需要去app设置
 
 #### 群推送规则(仅适用于群聊，私聊全部推送)
 
- - whitelist = [123456];//群白名单，白名单内的群聊消息才转发推送,白名单为空默认为全部推送
- - blacklist = [123456];//如果使用小号挂机器人，此处填写大号，防止自己的发言推送刷屏；同时也可以当屏蔽其他人用；为空则全部推送
+ - whitelist = [123456];    群白名单，白名单内的群聊消息才转发推送,白名单为空默认为全部推送
+ - blacklist = [123456];    如果使用小号挂机器人，此处填写大号，防止自己的发言推送刷屏；同时也可以当屏蔽其他人用；为空则全部推送
 
 #### 机器人内部配置
 
- - log_level: "debug",//日志等级，默认info，太多日志会卡顿（"trace" | "debug" | "info" | "warn" | "error" | "fatal" | "mark" | "off"）
- - platform: 2,//2：使用安卓pad协议 (1:安卓手机(默认) 2:aPad 3:安卓手表 4:MacOS 5:iPad)
- - ignore_self: true,//忽略机器人自己的信息
- - resend: true,//忘了，反正开着就对了，和风控有关
- - brief: true//被风控时尝试分片发送
+ - log_level: "debug",    日志等级，默认info，太多日志会卡顿（"trace" | "debug" | "info" | "warn" | "error" | "fatal" | "mark" | "off"）
+ - platform: 2,    2：使用安卓pad协议 (1:安卓手机(默认) 2:aPad 3:安卓手表 4:MacOS 5:iPad)
+ - ignore_self: true,    忽略机器人自己的信息
+ - resend: true,    忘了，反正开着就对了，和风控有关
+ - brief: true    被风控时尝试分片发送
 
 ## 极光推送对接方法
 
-1、前往极光官网(https://www.jiguang.cn/)注册账号
+1、前往极光官网(https://www.jiguang.cn/) 注册账号
 2、注册后登陆，点右上角账号中的“服务中心”，跳转后点击“开发者平台”进入
 3、进入平台后，创建一个应用，填写名字选择分类
 4、勾选“消息推送”服务，点击下一步
